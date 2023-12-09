@@ -10,7 +10,7 @@ include "../../php/db.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Update Progress</title>
   <link rel="stylesheet" href="../../css/base.css?v=1.1" />
-  <link rel="stylesheet" href="../../css/progress.css?v=1.1" />
+  <link rel="stylesheet" href="../../css/progress_update.css?v=1.1" />
 </head>
 
 <body>
@@ -41,7 +41,7 @@ include "../../php/db.php";
 
     <div class="divider_1"></div>
 
-    <div class="div_1">
+    <div class="div_1" id="update_table">
         <table>
             <tr>
                 <td>Chap No</td>
@@ -67,7 +67,15 @@ include "../../php/db.php";
                 <td>5</td>
                 <td><input type="checkbox" name="" id=""></td>
             </tr>
+            <tr>
+                <td>10</td>
+                <td><input type="checkbox" name="" id=""></td>
+            </tr>
         </table>
+    </div>
+
+    <div class="div_1" id="submit_wrapper">
+      <button >Update</button>
     </div>
 
   </div>

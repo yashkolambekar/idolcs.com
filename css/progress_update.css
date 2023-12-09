@@ -1,0 +1,23 @@
+#update_table table{
+    border-collapse: collapse;
+}
+
+#update_table table tr td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#update_table table tr td input[type="checkbox"]{
+    transform: scale(1.4);
+}
+
+#submit_wrapper button{
+    background: #99DAB2;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    border: none;
+}

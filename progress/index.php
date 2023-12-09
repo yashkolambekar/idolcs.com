@@ -30,7 +30,7 @@ include "../php/db.php";
     <div class="divider_1"></div>
 
     <div class="div_1" id="actions_wrapper">
-      <a href="">Update my records</a>
+      <a href="update">Update my records</a>
     </div>
 
     <div class="divider_1"></div>
