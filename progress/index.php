@@ -27,7 +27,13 @@ include "../php/db.php";
       <p>You are signed in as Yash Kolambekar (9602)</p>
     </div>
 
-    <!-- <div class="divider_2"></div> -->
+    <div class="divider_1"></div>
+
+    <div class="div_1" id="actions_wrapper">
+      <a href="">Update my records</a>
+    </div>
+
+    <div class="divider_1"></div>
 
     <div class="div_1" id="subject_select_wrapper">
       <a href="">101 COD</a>
@@ -43,17 +49,18 @@ include "../php/db.php";
 
     <div class="div_1" id="table_wrapper">
       <div id="table">
-        <div><p>Name</p></div>
-        <div><p>1</p></div>
-        <div><p>2</p></div>
-        <div><p>3</p></div>
-        <div><p>4</p></div>
-        <div><p>5</p></div>
-        <div><p>6</p></div>
-        <div><p>7</p></div>
-        <div><p>8</p></div>
-        <div><p>9</p></div>
-        <div><p>10</p></div>
+        <div class="table_head"><p>Name</p></div>
+        <div class="table_head"><p>1</p></div>
+        <div class="table_head"><p>2</p></div>
+        <div class="table_head"><p>3</p></div>
+        <div class="table_head"><p>4</p></div>
+        <div class="table_head"><p>5</p></div>
+        <div class="table_head"><p>6</p></div>
+        <div class="table_head"><p>7</p></div>
+        <div class="table_head"><p>8</p></div>
+        <div class="table_head"><p>9</p></div>
+        <div class="table_head"><p>10</p></div>
+        
       </div>
     </div>
 
