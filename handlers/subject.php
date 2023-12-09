@@ -46,76 +46,76 @@ $subject = $_GET["subject"];
 
 
 
-    
-        <?php
-        $query = "SELECT * FROM `chapters` WHERE `subject_id` = '$subject'";
-        $result = mysqli_query($db, $query);
-        if ($result) {
-          if(mysqli_num_rows($result) > 0) {
-            echo '    <div class="divider_1"></div>';
-            echo '<div class="div_1" id="notes_redirects">
+
+    <?php
+    $query = "SELECT * FROM `chapters` WHERE `subject_id` = '$subject'";
+    $result = mysqli_query($db, $query);
+    if ($result) {
+      if (mysqli_num_rows($result) > 0) {
+        echo '    <div class="divider_1"></div>';
+        echo '<div class="div_1" id="notes_redirects">
             <p>Chapterwise Notes and Video Explanations (Telegram)</p>
             <div class="links_1">';
-          while ($row = mysqli_fetch_assoc($result)) {
-            echo "<a href='" . $row["tg_link"] . "'>" . $row["chapter_name"] . "</a>";
-          }
-          echo '</div>
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo "<a href='" . $row["tg_link"] . "'>" . $row["chapter_name"] . "</a>";
+        }
+        echo '</div>
           </div>';
-        }
-        }
-        ?>
-      
-    
-        <?php
-        $query = "SELECT * FROM `lectures` WHERE `subject_id` = '$subject' ORDER BY `id` DESC";
-        $result = mysqli_query($db, $query);
-        if ($result) {
-          if(mysqli_num_rows($result) > 0) {
-            echo '    <div class="divider_1"></div>';
-            echo '<div class="div_1" id="notes_redirects">
+      }
+    }
+    ?>
+
+
+    <?php
+    $query = "SELECT * FROM `lectures` WHERE `subject_id` = '$subject' ORDER BY `id` DESC";
+    $result = mysqli_query($db, $query);
+    if ($result) {
+      if (mysqli_num_rows($result) > 0) {
+        echo '    <div class="divider_1"></div>';
+        echo '<div class="div_1" id="notes_redirects">
             <p>College Lecture Recordings (Youtube)</p>
             <div class="links_1">';
-          while ($row = mysqli_fetch_assoc($result)) {
-            echo "<a target='blank' href='" . $row["youtube_link"] . "'>";
-            echo "<p class='ll_head'>" . $row["title"] . "</p>";
-            echo '<div class="ll_small_text">';
-            echo '<p class="ll_time">' . $row["length"] . '</p>';
-            echo '<p>' . $row["date"] . '</p>';
-            echo '<p>' . $row["instructor"] . '</p>';
-            echo '<p>' . $row["pcp_centre"] . '</p>';
-            echo '</div>';
-            echo '</a>';
-          }
-          echo '</div>
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo "<a target='blank' href='" . $row["youtube_link"] . "'>";
+          echo "<p class='ll_head'>" . $row["title"] . "</p>";
+          echo '<div class="ll_small_text">';
+          echo '<p class="ll_time">' . $row["length"] . '</p>';
+          echo '<p>' . $row["date"] . '</p>';
+          echo '<p>' . $row["instructor"] . '</p>';
+          echo '<p>' . $row["pcp_centre"] . '</p>';
+          echo '</div>';
+          echo '</a>';
+        }
+        echo '</div>
           </div>';
-        }
-        }
-        ?>
+      }
+    }
+    ?>
 
 
-        <?php
-        $query = "SELECT * FROM `resources` WHERE `subject_code`= '$subject' ORDER BY `id` DESC LIMIT 5";
-        $result = mysqli_query($db, $query);
-        if ($result) {
-          if(mysqli_num_rows($result) > 0) {
-            echo '    <div class="divider_1"></div>';
-            echo '    <div class="div_1" id="notes_redirects">
+    <?php
+    $query = "SELECT * FROM `resources` WHERE `subject_code`= '$subject' ORDER BY `id` DESC LIMIT 5";
+    $result = mysqli_query($db, $query);
+    if ($result) {
+      if (mysqli_num_rows($result) > 0) {
+        echo '    <div class="divider_1"></div>';
+        echo '    <div class="div_1" id="notes_redirects">
             <p>Resources (Redirect)</p>
             <div class="links_1">';
-          while ($row = mysqli_fetch_assoc($result)) {
-            echo "<a target='blank' href='" . $row["link"] . "'>";
-            echo "<p class='ll_head'>" . $row["title"] . "</p>";
-            echo '<div class="ll_small_text">';
-            echo '<p>' . $row["description"] . '</p>';
-            echo '</div>';
-            echo '</a>';
-          }
-          echo '</div>
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo "<a target='blank' href='" . $row["link"] . "'>";
+          echo "<p class='ll_head'>" . $row["title"] . "</p>";
+          echo '<div class="ll_small_text">';
+          echo '<p>' . $row["description"] . '</p>';
+          echo '</div>';
+          echo '</a>';
+        }
+        echo '</div>
           </div>';
-        }
-        }
-        ?>
-      
+      }
+    }
+    ?>
+
 
     <div class="divider_1"></div>
 

@@ -1,0 +1,38 @@
+#subject_select_wrapper{
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#subject_select_wrapper a{
+    padding: 5px 10px;
+    background: #ffd3b1;
+    border-radius: 4px;
+    display: block;
+    text-decoration: none;
+    color: #863600;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#subject_select_wrapper .a_active{
+    background: #ff770f;
+    color: white;
+}
+
+#table_wrapper #table{
+    display: grid;
+    
+    max-width: 50%;
+    overflow: scroll;
+}
+
+#table_wrapper table tr td{
+    padding: 10px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
