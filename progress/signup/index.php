@@ -24,33 +24,22 @@ include "../../php/db.php";
     <div class="divider_1"></div>
 
     <div class="div_1">
-      <h2>Update Progress</h2>
-      <p>You are signed in as Yash Kolambekar (9602)</p>
-    </div>
-
-    <div class="div_1">
-        <select name="" id="subject_select">
-        </select>
+      <h2>Create ID</h2>
+      <!-- <p>You do not require money for </p> -->
     </div>
 
     <div class="divider_1"></div>
 
-    <div class="div_1" id="update_table">
-        <table id="update_table_table">
-            <tr>
-                <td>Chap No</td>
-                <td>Status</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td><input type="checkbox" name="" id=""></td>
-            </tr>
-        </table>
+    <div class="div_1">
+      <label for="">
+        <p>Name</p>
+        <input type="text" name="" id="" placeholder="Sushil Vaidya">
+      </label>
+      <label for="">
+        <p></p>
+      </label>
     </div>
 
-    <div class="div_1" id="submit_wrapper">
-      <button >Update</button>
-    </div>
 
   </div>
 </body>

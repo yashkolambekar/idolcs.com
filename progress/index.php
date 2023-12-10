@@ -4,13 +4,14 @@ include "../php/db.php";
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Progress</title>
-  <link rel="stylesheet" href="../css/base.css?v=1.1" />
-  <link rel="stylesheet" href="../css/progress.css?v=1.1" />
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress</title>
+    <link rel="stylesheet" href="../css/base.css?v=1.1" />
+    <link rel="stylesheet" href="../css/progress.css?v=1.1" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,26 +24,27 @@ include "../php/db.php";
     <div class="divider_1"></div>
 
     <div class="div_1">
-      <h2>Leaderboard</h2>
+      <h2>Progress</h2>
       <p>You are signed in as Yash Kolambekar (9602)</p>
     </div>
 
     <div class="divider_1"></div>
 
     <div class="div_1" id="actions_wrapper">
-      <a href="update">Update my records</a>
+      <?php 
+        if(isset($_COOKIE[""])){
+          echo '<a href="update">Update my records</a>';
+        }else{
+          echo '<a href="signup">Sign Up</a>';
+          echo '<a href="login">Log In</a>';
+        }
+      ?>
+      
     </div>
 
     <div class="divider_1"></div>
 
     <div class="div_1" id="subject_select_wrapper">
-      <a href="">101 COD</a>
-      <a href="">102 Python</a>
-      <a href="">103 FOSS</a>
-      <a href="" class="a_active">104 DBMS</a>
-      <a href="">105 Disc Maths</a>
-      <a href="">106 Statistics</a>
-      <a href="">107 Soft Skills</a>
     </div>
 
     <div class="divider_2"></div>
@@ -61,11 +63,179 @@ include "../php/db.php";
         <div class="table_head"><p>9</p></div>
         <div class="table_head"><p>10</p></div>
         
+        <div class="row_1"><p>Yash Kolambekar</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+
+        <div class="row_2"><p>Mukesh Bhai</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+
+        <div class="row_1"><p>Jethalal</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+
+        <div class="row_2"><p>Mukesh Bhai</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+
+        <div class="row_1"><p>Jethalal</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+
+        <div class="row_2"><p>Mukesh Bhai</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+
+        <div class="row_1"><p>Jethalal</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        
+        <div class="row_1"><p>Yash Kolambekar</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+
+        <div class="row_2"><p>Mukesh Bhai</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+
+        <div class="row_1"><p>Jethalal</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+
+        <div class="row_2"><p>Mukesh Bhai</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+
+        <div class="row_1"><p>Jethalal</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+
+        <div class="row_2"><p>Mukesh Bhai</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p>✅</p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p></p></div>
+        <div class="row_2"><p>✅</p></div>
+
+        <div class="row_1"><p>Jethalal</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p></p></div>
+        <div class="row_1"><p>✅</p></div>
+
       </div>
     </div>
 
 
   </div>
 </body>
-
+<script src="../js/progress.js"></script>
 </html>

@@ -43,11 +43,23 @@
     font-weight: 600;
 }
 
-#actions_wrapper a{
+#actions_wrapper a,
+#actions_wrapper button{
     background: #99DAB2;
     padding: 5px 10px;
     border-radius: 4px;
     text-decoration: none;
     color: black;
     font-weight: 600;
+    font-size: 14px;
+    border: none;
+    margin-right: 5px;
+}
+
+.row_1{
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.row_2{
+    background: rgba(0, 0, 0, 0.01);
 }
